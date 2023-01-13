@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Budget Tracker</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="app">
+      <form class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-medium mb-4">New Budget Entry</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2">Title</label>
+          <input class="border border-gray-400 p-2 w-full" type="text" placeholder="Enter title">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2">Category</label>
+          <input class="border border-gray-400 p-2 w-full" type="text" placeholder="Enter category">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2">Type</label>
+          <input class="border border-gray-400 p-2 w-full" type="text" placeholder="Enter type">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2">Value</label>
+          <input class="border border-gray-400 p-2 w-full" type="number" placeholder="Enter value">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-medium mb-2">Note</label>
+          <textarea class="border border-gray-400 p-2 w-full" placeholder="Enter note"></textarea>
+        </div>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Save</button>
+      </form>
+      
+    </div>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
